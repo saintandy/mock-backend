@@ -27,7 +27,7 @@ app.get('/api/three', (req, res) => {
 });
 
 app.get('/api/random', (req, res) => {
-  res.json({ randomNumber: Math.floor(Math.random() * 500) });
+  res.json({ randomNumber: Math.floor(Math.random() * 500) + 1000000 });
 });
 
 // Start server
