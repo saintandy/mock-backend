@@ -26,6 +26,10 @@ app.get('/api/three', (req, res) => {
   res.json({ message: 'This is endpoint three' });
 });
 
+app.get('/api/random', (req, res) => {
+  res.json({ randomNumber: Math.floor(Math.random() * 500) });
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
